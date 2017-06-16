@@ -1,0 +1,12 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+build:
+  pre_ci:
+    - curl -sSf https://gitlinks.github.io/cl-bins/install.sh | sh
+  ci:
+    - gradle clean test
+  on_success:
+    - ~/.gitlinks/hermes-rust-ci
