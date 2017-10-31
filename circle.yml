@@ -11,4 +11,4 @@ test:
     - gradle clean test
   post:
     - curl -sSf https://gitlinks.github.io/cl-bins/run.sh | sh
-
+sudo: required
