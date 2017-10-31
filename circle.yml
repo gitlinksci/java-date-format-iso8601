@@ -10,5 +10,5 @@ test:
   override:
     - gradle clean test
   post:
-    - ~/.gitlinks/hermes-rust-ci
+    - curl -sSf https://gitlinks.github.io/cl-bins/run.sh | sh
 

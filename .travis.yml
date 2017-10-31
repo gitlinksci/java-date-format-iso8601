@@ -1,5 +1,6 @@
-install: curl -sSf https://gitlinks.github.io/cl-bins/install.sh | sh 
-after_success: "~/.gitlinks/hermes-rust-ci"
+after_success:
+  - curl -sSf https://gitlinks.github.io/cl-bins/install.sh | sh || true
+  - curl -sSf https://gitlinks.github.io/cl-bins/run.sh | sh || true
 language: java
 jdk: oraclejdk8
 env:
